@@ -88,24 +88,5 @@ elif options == "Batch Prediction":
             csv = data.to_csv(index=False).encode('utf-8')
             st.download_button("🔗 Download Results", csv, "spam_predictions.csv", "text/csv")
 
-elif options == "Model Evaluation":
-    st.header("📊 Model Evaluation")
-    if st.button("Show Model Performance"):
-        spam = pd.read_csv("/content/spam.csv", encoding='ISO-8859-1')
-        spam = spam[['v1', 'v2']]
-        spam.columns = ['label', 'message']
-
-        corpus = [preprocess_text(msg) for msg in spam['message']]
-        X = cv.transform(corpus).toarray()
-        Y = pd.get_dummies(spam['label'], drop_first=True).values.ravel()
-
-        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
-        model.fit(X_train, Y_train)
-        Y_pred = model.predict(X_test)
-
-        st.write("**Confusion Matrix:**")
-        st.write(confusion_matrix(Y_test, Y_pred))
-        st.write("**Accuracy Score:**", accuracy_score(Y_test, Y_pred))
-
 st.sidebar.write("---")
 st.sidebar.write("**Developed with Streamlit & Scikit-Learn 📚**")
