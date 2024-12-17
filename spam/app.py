@@ -14,11 +14,11 @@ from sklearn.model_selection import train_test_split
 nltk.download('stopwords')
 
 # Load the model and CountVectorizer
-model_filename = "MNB.pkl"
+model_filename = "/MNB.pkl"
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
 
-cv_filename = "countvectorizer.pkl"
+cv_filename = "/countvectorizer.pkl"
 with open(cv_filename, 'rb') as file:
     cv = pickle.load(file)
 
