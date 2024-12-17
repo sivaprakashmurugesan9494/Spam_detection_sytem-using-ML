@@ -52,7 +52,7 @@ if options == "Home":
     st.write(
         "Navigate to the left sidebar to test single messages, upload batch files, or view model performance metrics."
     )
-    st.image("https://www.medianama.com/wp-content/uploads/2023/06/spam-g742071dd1_1280.jpg", use_column_width=True)
+    st.image("https://www.medianama.com/wp-content/uploads/2023/06/spam-g742071dd1_1280.jpg", use_container_width=True)
 
 elif options == "Single Prediction":
     st.header("📧 Single Message Prediction")
