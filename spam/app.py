@@ -31,7 +31,7 @@ def preprocess_text(text):
 
 # Sidebar for Navigation and Settings
 st.sidebar.title("Navigation")
-options = st.sidebar.radio("Go to:", ["Home", "Single Prediction", "Batch Prediction", "Model Evaluation"])
+options = st.sidebar.radio("Go to:", ["Home", "Single Prediction", "Batch Prediction"])
 st.sidebar.write("### About the App")
 st.sidebar.info(
     "This Spam Detection System uses a trained Multinomial Naïve Bayes model to predict whether a message is Spam or Not Spam."
