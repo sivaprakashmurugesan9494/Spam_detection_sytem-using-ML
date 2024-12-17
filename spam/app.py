@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import re
+import nltk
 nltk.download('stopwords')
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
@@ -10,7 +11,6 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 
 # Load NLTK stopwords
-import nltk
 nltk.download('stopwords')
 
 # Load the model and CountVectorizer
