@@ -10,9 +10,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import confusion_matrix, accuracy_score
 from sklearn.model_selection import train_test_split
 
-# Load NLTK stopwords
-nltk.download('stopwords')
-
 # Load the model and CountVectorizer
 model_filename = "spam/MNB.pkl"
 with open(model_filename, 'rb') as file:
