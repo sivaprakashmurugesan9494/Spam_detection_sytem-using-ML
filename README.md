@@ -7,17 +7,10 @@ Batch Prediction: Upload a CSV file of messages and get predictions for all.
 Model Evaluation: View the model's performance metrics, including accuracy and a confusion matrix.
 Interactive UI: User-friendly interface with clear navigation.
 🚀 Live Demo
-Access the app here.
-https://spamdetection0.streamlit.app/
 
-📂 Project Structure
-/spam_detection_system
-    ├── app.py                 # Main Streamlit app script
-    ├── MNB.pkl                # Trained Multinomial Naïve Bayes model
-    ├── countvectorizer.pkl    # Fitted CountVectorizer for text preprocessing
-    ├── nltk_data/             # NLTK stopwords data (for deployment)
-    ├── requirements.txt       # Dependencies
-    ├── README.md              # Project documentation
+Access the app here.
+
+https://spamdetection0.streamlit.app/
 
 📊 How It Works
 Text Preprocessing:
