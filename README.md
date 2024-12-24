@@ -1,4 +1,4 @@
-📧 Spam Detection System Using Machine Learning
+
 This project is a Spam Detection System built using Multinomial Naïve Bayes and deployed as an interactive web application using Streamlit. The app allows users to predict whether a given message is Spam or Not Spam and provides batch processing for bulk message predictions.
 
 🌟 Features
